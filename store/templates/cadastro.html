@@ -6,8 +6,7 @@
 
 {% block content %}
 <body>
-    <h1>Cadastro de Cliente</h1>
-
+    <h1 class="titulo-cadastro">Cadastro de Cliente</h1>
     {% if messages %}
         {% for message in messages %}
             <div class="alert alert-success">{{ message }}</div>
@@ -16,11 +15,7 @@
 
     <form method="post">
         {% csrf_token %}
-        <h3>Informações do Cliente</h3>
         {% crispy cliente_form %}  <!-- Formulário de Cliente -->
-
-        <h3>Cadastro de Usuário</h3>
-        {% crispy user_form %}  <!-- Formulário de Registro de Usuário -->
 
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>

@@ -1,22 +1,26 @@
 <!-- templates/about.html -->
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Sobre Nós{% endblock %}
 
 {% block content %}
-    <header class="text-center my-4">
+    <header class="text-center my-4 header-about">
         <h1 class="display-4">Sobre a GameShop</h1>
         <h3 class="lead">Paixão por Games, Compromisso com Você</h3>
     </header>
 
-    <section>
-        <h2>Nossa História</h2>
+    <div class="banner-container text-center">
+        <img src="{% static 'images/img_control.png' %}" alt="Banner de Games" class="img-fluid">
+    </div>
+
+    <section class="container-section history-section">
+        <h2 class="section-title">Nossa História</h2>
         <p>A GameShop foi fundada em 2022 com o objetivo de criar um espaço onde gamers de todas as idades e gostos pudessem encontrar o que há de melhor no mundo dos jogos. Desde lançamentos populares até itens colecionáveis raros, nossa missão é oferecer uma experiência completa para os amantes de games.</p>
     </section>
 
-    <section>
-        <h2>O que Oferecemos</h2>
-        <ul>
+    <section class="container-section offerings-section">
+        <h2 class="section-title">O que Oferecemos</h2>
+        <ul class="offerings-list">
             <li>Jogos: De consoles clássicos a plataformas de última geração.</li>
             <li>Acessórios: Controles, headsets, cadeiras gamer e muito mais.</li>
             <li>Merchandise: Camisetas, figuras de ação e itens exclusivos.</li>
@@ -24,14 +28,15 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Nossa Missão</h2>
+    <section class="container-section mission-section">
+        <h2 class="section-title">Nossa Missão</h2>
         <p>Na GameShop, acreditamos que os games são mais do que um passatempo – são uma forma de arte, cultura e conexão. Estamos comprometidos em oferecer não apenas produtos, mas uma experiência que faça você se sentir parte dessa comunidade vibrante.</p>
     </section>
 
-    <section>
-        <h2>Nosso Compromisso</h2>
+    <section class="container-section commitment-section">
+        <h2 class="section-title">Nosso Compromisso</h2>
         <p>Trabalhamos com as principais marcas e desenvolvedores para garantir que você tenha acesso aos melhores e mais recentes produtos. Seu feedback é fundamental para nós, e estamos sempre ouvindo para melhorar e inovar.</p>
     </section>
 {% endblock %}
+
 

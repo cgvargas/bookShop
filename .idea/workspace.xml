@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82d96aab-9ecf-4d16-b68c-ccebbb183df3" name="Changes" comment="" />
+    <list default="true" id="82d96aab-9ecf-4d16-b68c-ccebbb183df3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/store/static/images/img_control.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/static/images/logo_game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/store/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +67,11 @@
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\claud\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="8e1397f1-dd97-4ecd-90df-9d0fdeb8fed9" reportId="gameShop/qodana/2024-09-03" />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\claud\OneDrive_CGVargas\OneDrive\projetos\PYTHON\gameShop\store\static\images" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

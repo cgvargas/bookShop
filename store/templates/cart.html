@@ -3,7 +3,6 @@
 
 {% block content %}
     <h2>Seu Carrinho</h2>
-
     {% if cart_items %}
         <table class="table table-striped">
             <thead>
@@ -33,13 +32,12 @@
             </tbody>
         </table>
         <h4>Total Geral: R$ {{ total_cost|floatformat:2 }}</h4>
-        <a href="{% url 'finalizar_compra' %}" class="btn btn-success">Finalizar Compra</a>
+        <form action="{% url 'finalizar_compra' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Finalizar Compra</button>
     {% else %}
         <p>Seu carrinho está vazio.</p>
         <a href="{% url 'home' %}" class="btn btn-primary">Continuar Comprando</a>
     {% endif %}
-    <form action="{% url 'finalizar_compra' %}" method="post">
-    {% csrf_token %}
-    <button type="submit" class="btn btn-success">Finalizar Compra</button>
 </form>
 {% endblock %}

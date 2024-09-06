@@ -7,7 +7,7 @@ from django.views import View
 from .forms import ContatoForms, ClienteForm, SenhaForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 
-from .models import Produto, CartItem, Cliente, Estado
+from .models import Produto, CartItem, Cliente
 
 
 def home(request):
@@ -127,8 +127,7 @@ def user_login(request):
 
 class CadastroClienteView(View):
     def get(self, request):
-        estados = self.get_estados()  # Obter os estados
-        cliente_form = ClienteForm(estados=estados)  # Formulário para o cliente
+        cliente_form = ClienteForm()  # Formulário para o cliente
         senha_form = SenhaForm()  # Instanciando senha_form
         user_form = UserRegistrationForm()  # Instanciando user_form
 
@@ -141,12 +140,10 @@ class CadastroClienteView(View):
             'cliente_form': cliente_form,
             'senha_form': senha_form,
             'user_form': user_form,  # Passando a variável user_form
-            'estados': estados
         })
 
     def post(self, request):
-        estados = self.get_estados()  # Obter os estados novamente
-        cliente_form = ClienteForm(request.POST, estados=estados)  # Formulário para o cliente
+        cliente_form = ClienteForm(request.POST)  # Formulário para o cliente
         senha_form = SenhaForm(request.POST)  # Instanciando senha_form com os dados POST
         user_form = UserRegistrationForm(request.POST)  # Instanciando user_form com os dados POST
 
@@ -162,12 +159,7 @@ class CadastroClienteView(View):
             'cliente_form': cliente_form,
             'senha_form': senha_form,  # Passando a variável senha_form em caso de erro
             'user_form': user_form,  # Passando a variável user_form em caso de erro
-            'estados': estados
         })
-
-    def get_estados(self):
-        estados = Estado.objects.all()
-        return [(estado.sigla, estado.nome) for estado in estados]  # Retorna os estados
 
 
 class DefinirSenhaView(View):

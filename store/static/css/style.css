@@ -57,6 +57,30 @@ input[type="text"], input[type="email"], select {
     margin-bottom: 15px; /* Espaçamento entre campos */
 }
 
+.titulo-cadastro {
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.form-control {
+    font-size: 16px !important; /* Ajusta o tamanho do texto */
+    color: #333 !important; /* Cor do texto digitado */
+}
+
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.3) !important; /* Cor do placeholder, se necessário */
+    opacity: 1; /* Garantir que a opacidade esteja em 1 */
+    font-size: 16px; /* Tamanho do placeholder */
+    /* Você também pode adicionar outras propriedades, como: font-style, font-weight, etc. */
+}
+
+/* Se quiser tudo em letras maiúsculas, por exemplo: */
+.form-control {
+    text-transform: capitalize; /* ou 'uppercase' para tudo maiúsculo */
+}
+
 button {
     background-color: #28a745; /* Cor de fundo verde */
     color: white; /* Texto em branco */
@@ -110,4 +134,60 @@ footer a {
 
 footer a:hover {
     color: #ffcc00; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilo para o template about.html */
+.banner-container {
+    margin: 20px 0; /* Espaçamento acima e abaixo do banner */
+}
+
+.banner-container img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+}
+
+.header-about {
+    background-color: #007bff; /* Azul para o cabeçalho */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-section {
+    background-color: #ffffff; /* Cor de fundo branco */
+    margin: 20px auto; /* Margem centralizada */
+    padding: 20px; /* Padding uniforme */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.section-title {
+    color: #ff6600; /* Laranja para os títulos */
+    border-bottom: 2px solid #007bff; /* Linha azul para destaque */
+    padding-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.offerings-list {
+    list-style-type: none; /* Remove o estilo padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.offerings-list li {
+    background-color: #e7f1ff; /* Fundo claro para os itens */
+    margin: 10px 0; /* Margem entre os itens */
+    padding: 10px; /* Padding interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.offerings-list li:hover {
+    background-color: #d1e7ff; /* Fundo mais escuro no hover */
+}
+
+@media (max-width: 600px) {
+    .container-section {
+        margin: 10px; /* Ajuste para telas menores */
+        padding: 15px; /* Ajuste no padding */
+    }
 }
