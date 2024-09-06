@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.titulo }}{% endblock %}
+
+{% block content %}
+    <h1>{{ product.nome }}</h1>
+    <img src="{{ product.imagem.url }}" class="img-fluid" alt="Imagem de {{ product.nome }}">
+    <p><strong>Produto:</strong> {{ product.nome }}</p>
+    <p><strong>Descrição:</strong> {{ product.descricao }}</p>
+    <p><strong>Preço:</strong> {{ product.preco }}</p>
+    <p><strong>Quantidade:</strong> {{ product.quantidade }}</p>
+    <form action="{% url 'adicionar_ao_carrinho' product.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Comprar</button>
+    </form>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Voltar</a>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!-- templates/cart.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Seu Carrinho</h2>
+
+    {% if cart_items %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in cart_items %}
+                    <tr>
+                        <td>{{ item.produto.nome }}</td> <!-- Correto: acesso via ForeignKey -->
+                        <td>{{ item.quantidade_no_carrinho }}</td>
+                        <td>R$ {{ item.produto.preco|floatformat:2 }}</td>
+                        <td>R$ {{ item.produto.preco|floatformat:2 }} * {{ item.quantidade_no_carrinho }} = R$ {{ item.total_item|floatformat:2 }}</td>
+                        <td>
+                            <form action="{% url 'remover_carrinho' item.produto.id %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger btn-sm">Remover</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h4>Total Geral: R$ {{ total_cost|floatformat:2 }}</h4>
+        <a href="{% url 'finalizar_compra' %}" class="btn btn-success">Finalizar Compra</a>
+    {% else %}
+        <p>Seu carrinho está vazio.</p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Continuar Comprando</a>
+    {% endif %}
+    <form action="{% url 'finalizar_compra' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success">Finalizar Compra</button>
+</form>
+{% endblock %}

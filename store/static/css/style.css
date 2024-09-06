@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Mantido branco para uma aparência limpa */
+    color: #333; /* Texto em cinza escuro */
+    margin: 0; /* Remove margem padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+}
+
+.container {
+    max-width: 1200px; /* Aumenta a largura máxima */
+    width: 90%; /* Largura responsiva, não deve ser maior que 100% */
+    margin: 50px auto; /* Centraliza a caixa no meio da tela */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 5px; /* Arredonda os cantos da caixa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+header {
+    background-color: #f0f0f0; /* Cor de fundo leve */
+    padding: 20px; /* Espaçamento interno */
+    border-bottom: 1px solid #ddd; /* Linha inferior para separação */
+}
+
+footer {
+    margin-top: 40px; /* Espaçamento acima do rodapé */
+    padding: 10px; /* Espaçamento interno */
+    border-top: 1px solid #ddd; /* Linha superior para separação */
+    background-color: #f8f9fa; /* Background leve para o rodapé */
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #007bff !important; /* Cor de fundo da navbar */
+}
+
+.navbar .nav-link {
+    color: white !important; /* Cor dos links na navbar */
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important; /* Cor dos links ao passar o mouse */
+}
+
+.line {
+    height: 4px; /* Defina a altura da linha */
+    background-color: orange; /* Cor da linha */
+    margin-top: 0; /* Remova margens se necessário */
+}
+
+/* Estilização de campos do formulário */
+input[type="text"], input[type="email"], select {
+    width: 100%; /* Campos ocupam toda a largura da container */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px; /* Borda arredondada */
+    margin-bottom: 15px; /* Espaçamento entre campos */
+}
+
+button {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: white; /* Texto em branco */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+button:hover {
+    background-color: #218838; /* Cor mais escura quando o botão é hover */
+}
+
+.alert {
+    padding: 10px; /* Espaçamento interno */
+    color: #fff; /* Texto em branco */
+    background-color: #007bff; /* Cor do alert */
+    border-radius: 5px; /* Arredonda os cantos do alert */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px; /* Menos margem em telas pequenas */
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+
+    header, footer {
+        background-color: #007bff !important;
+        padding: 15px; /* Ajuste no padding */
+    }
+}
+
+.line {
+    height: 4px; /* Defina a altura da linha */
+    background-color: orange; /* Cor da linha */
+    margin-top: 0; /* Remova margens se necessário */
+}
+
+footer {
+    background-color: #007bff; /* Cor de fundo do footer igual ao da navbar */
+    color: white; /* Cor do texto em branco para bom contraste */
+    padding: 20px; /* Espaçamento interno */
+    position: relative; /* Posicionamento relativo */
+}
+
+footer a {
+    color: white; /* Links no footer em branco */
+}
+
+footer a:hover {
+    color: #ffcc00; /* Cor dos links ao passar o mouse */
+}

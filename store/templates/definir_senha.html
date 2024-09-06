@@ -1,0 +1,16 @@
+<!-- templates/definir_senha.html -->
+{% extends 'base.html' %}
+
+{% block title %}Definir Senha{% endblock %}
+
+{% block content %}
+<body>
+    <h1>Definir Senha</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {% crispy senha_form %}
+        <button type="submit" class="btn btn-primary">Definir Senha</button>
+    </form>
+</body>
+{% endblock %}

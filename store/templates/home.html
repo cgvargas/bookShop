@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+    <h1 class="display-4 text-center">Destaques Ultimate</h1>
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ product.imagem.url }}" class="card-img-top" alt="Imagem de {{ product.nome }}" style="height: 500px; width: 100%; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.nome }}</h5>
+                    <p class="card-text">{{ product.descricao|truncatewords:20 }}</p>
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

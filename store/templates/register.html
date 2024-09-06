@@ -1,0 +1,13 @@
+<!-- templates/register.html -->
+{% extends 'base.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<h2>Registrar Novo Usuário</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- Renderiza o form -->
+    <button type="submit">Registrar</button>
+</form>
+{% endblock %}

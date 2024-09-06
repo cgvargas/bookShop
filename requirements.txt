@@ -1,0 +1,16 @@
+asgiref==3.8.1
+beautifulsoup4==4.12.3
+crispy-bootstrap4==2024.1
+decouple==0.0.7
+Django==5.1
+django-allauth==64.2.1
+django-bootstrap4==24.3
+django-crispy-forms==2.3
+django-stdimage==6.0.2
+gunicorn==23.0.0
+packaging==24.1
+pillow==10.4.0
+soupsieve==2.6
+sqlparse==0.5.1
+tzdata==2024.1
+whitenoise==6.7.0

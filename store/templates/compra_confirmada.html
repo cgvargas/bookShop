@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Compra Realizada com Sucesso!</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        {% for product in produtos_comprados %}
+            <div style="margin: 10px;">
+                <img src="{{ product.imagem.url }}"
+                    class="card-img-top img-custom"
+                    alt="Imagem de {{ product.nome }}">
+                <p style="color: blue;">Você comprou: {{ product.nome }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <p>Obrigado pela sua compra! Você receberá um e-mail de confirmação em breve.</p>
+    <a href="{% url 'home' %}">Voltar ao Início</a>
+{% endblock %}
+
