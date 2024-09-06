@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82d96aab-9ecf-4d16-b68c-ccebbb183df3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gameShop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameShop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameShop/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameShop/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameShop/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameShop/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/imagens/Atari-2600.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/imagens/Console-Sony-Playstation-4-Slim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/imagens/XBOX-360.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/imagens/play4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/imagens/xbox_x.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0002_cartitem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0003_estado_alter_cartitem_quantidade_no_carrinho_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/static/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/cadastro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/compra_confirmada.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/definir_senha.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="82d96aab-9ecf-4d16-b68c-ccebbb183df3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,16 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/claud/OneDrive/projetos/PYTHON/gameShop&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/claud/OneDrive/projetos/PYTHON/gameShop"
   }
-}</component>
+}]]></component>
   <component name="QodanaCIConfigService">
     <option name="ciType" value="GITHUB" />
     <option name="path" value="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" />
