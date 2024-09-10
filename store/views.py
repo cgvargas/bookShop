@@ -122,6 +122,7 @@ def user_login(request):
             return redirect('home')
         else:
             messages.error(request, 'Usuário ou senha inválidos.')
+
     return render(request, 'login.html')
 
 

@@ -2,6 +2,7 @@
 from django.urls import path
 from .views import home, contato, sobre, product_detail, carrinho, user_login, register, finalizar_compra, \
     adicionar_ao_carrinho, remover_carrinho, compra_confirmada, CadastroClienteView, DefinirSenhaView
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', home, name='home'),
@@ -12,7 +13,9 @@ urlpatterns = [
     path('remover_carrinho/<int:product_id>/', remover_carrinho, name='remover_carrinho'),
     path('carrinho/', carrinho, name='carrinho'),
     path('finalizar_compra/', finalizar_compra, name='finalizar_compra'),
-    path('login/', user_login, name='login'),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
+    # Logout
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('register/', register, name='register'),
     path('compra_confirmada/', compra_confirmada, name='compra_confirmada'),
     path('cadastro/', CadastroClienteView.as_view(), name='cadastro'),

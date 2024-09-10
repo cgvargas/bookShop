@@ -5,14 +5,16 @@
 {% bootstrap_css %}
 
 {% block content %}
-        <h1 class="display-6">Contato</h1>
-        {% bootstrap_messages %}
-        <form action="{% url 'contato' %}" method="post" class="form" autocomplete="off">
-            {% csrf_token %}
-            {% bootstrap_form form layout='inline' %}
-            {% buttons %}
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            {% endbuttons %}
-        </form>
-    {% bootstrap_javascript jquery='full' %}
+<div>
+    <h1 class="display-6 text-center">Contato</h1>
+    {% bootstrap_messages %}
+    <form action="{% url 'contato' %}" method="post" class="border p-4 rounded shadow-sm" autocomplete="off">
+        {% csrf_token %}
+        {% bootstrap_form form layout='vertical' %}
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        </div>
+    </form>
+</div>
+{% bootstrap_javascript jquery='full' %}
 {% endblock %}

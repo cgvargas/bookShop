@@ -5,19 +5,21 @@
 {% block title %}Cadastro de Cliente{% endblock %}
 
 {% block content %}
-<body>
-    <h1 class="titulo-cadastro">Cadastro de Cliente</h1>
+<div>
+    <h1 class="text-center display-6">Cadastro de Cliente</h1>
     {% if messages %}
         {% for message in messages %}
-            <div class="alert alert-success">{{ message }}</div>
+            <div class="alert alert-success text-center">{{ message }}</div>
         {% endfor %}
     {% endif %}
 
-    <form method="post">
+    <form method="post" class="border p-4 rounded shadow-sm">
         {% csrf_token %}
         {% crispy cliente_form %}  <!-- Formulário de Cliente -->
 
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        </div>
     </form>
-</body>
+</div>
 {% endblock %}

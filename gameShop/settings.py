@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os.path
 
-from decouple import config  # Se estiver usando python-decouple para gerenciar configurações
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -136,8 +135,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  # Onde as imagens serão armazena
 # Outras configurações...
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = 'index'  # Ou o nome da URL para onde deseja redirecionar após o login
-LOGOUT_REDIRECT_URL = 'index'  # Redireciona para a página inicial após o logout
+LOGIN_REDIRECT_URL = 'home'  # Ou o nome da URL para onde deseja redirecionar após o login
+LOGOUT_REDIRECT_URL = 'home'  # Redireciona para a página inicial após o logout
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
